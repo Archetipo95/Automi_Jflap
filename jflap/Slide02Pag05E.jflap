@@ -19,6 +19,12 @@
 					<id>2</id>&#13;
 				</state>&#13;
 			</structure>&#13;
+			<structure type="start_state">&#13;
+				<state>&#13;
+					<name>q0</name>&#13;
+					<id>0</id>&#13;
+				</state>&#13;
+			</structure>&#13;
 			<structure type="final_states">&#13;
 				<state>&#13;
 					<name>q2</name>&#13;
@@ -92,12 +98,6 @@
 						<id>1</id>&#13;
 					</to>&#13;
 				</fsa_trans>&#13;
-			</structure>&#13;
-			<structure type="start_state">&#13;
-				<state>&#13;
-					<name>q0</name>&#13;
-					<id>0</id>&#13;
-				</state>&#13;
 			</structure>&#13;
 		</structure>&#13;
 		<state_point_map>&#13;
