@@ -234,6 +234,11 @@ code.language-yaml {
 <li><a href="#02-nfa">02-nfa</a>
 <ul>
 <li><a href="#esercizio-05e">Esercizio 05E</a></li>
+<li><a href="#eercizio-07">Eercizio 07</a></li>
+<li><a href="#esercizio-12a">Esercizio 12A</a></li>
+<li><a href="#esercizio-12b">Esercizio 12B</a></li>
+<li><a href="#esercizio-12c">Esercizio 12C</a></li>
+<li><a href="#esercizio-13">Esercizio 13</a></li>
 </ul>
 </li>
 <li><a href="#03-epsilon">03-epsilon</a>
@@ -248,23 +253,23 @@ code.language-yaml {
 <h3 class="mume-header" id="esercizio-22">Esercizio 22</h3>
 
 <p>Automa che accetta il linguaggio delle stringhe con 01 come sottostringa.</p>
-<p><img src="immagini\0122.png?0.2860348594755282" alt=""></p>
+<p><img src="immagini\0122.png?0.0051171315805003115" alt=""></p>
 <h3 class="mume-header" id="esercizio-23a">Esercizio 23A</h3>
 
 <p>Insieme di tutte e sole le stringhe con un numero pari di 0 e un numero pari di 1.</p>
-<p><img src="immagini\0123A.png?0.9679917217872736" alt=""></p>
+<p><img src="immagini\0123A.png?0.2583072177943353" alt=""></p>
 <h3 class="mume-header" id="esercizio-23b">Esercizio 23B</h3>
 
 <p>Insieme di tutte le stringhe che finiscono con 00.</p>
-<p><img src="immagini\0123B.png?0.6420919864583341" alt=""></p>
+<p><img src="immagini\0123B.png?0.2089287083220268" alt=""></p>
 <h3 class="mume-header" id="esercizio-23c">Esercizio 23C</h3>
 
 <p>Insieme di tutte le stringhe che contengono esattamente tre zeri (anche non consecutivi).</p>
-<p><img src="immagini\0123C.png?0.7585969051834063" alt=""></p>
+<p><img src="immagini\0123C.png?0.3864994702725626" alt=""></p>
 <h3 class="mume-header" id="esercizio-23d">Esercizio 23D</h3>
 
 <p>Insieme delle stringhe che cominciano o finiscono (o entrambe le cose) con 01.</p>
-<p><img src="immagini\0123D.png?0.47865285063410834" alt=""></p>
+<p><img src="immagini\0123D.png?0.3761988549070314" alt=""></p>
 <h3 class="mume-header" id="esercizio-24">Esercizio 24</h3>
 
 <p>Modellare il comportamento di un distributore di bibite con un DFA. Il modello deve rispettare le seguenti specifiche:</p>
@@ -274,13 +279,40 @@ code.language-yaml {
 <li>Appena le monete inserite raggiungono o superano il costo della bibita, il distributore emette una lattina</li>
 <li>Il distributore dà il resto (se serve) subito dopo aver emesso la lattina</li>
 </ul>
-<p><img src="immagini\0124.png?0.04898385244059211" alt=""></p>
+<p><img src="immagini\0124.png?0.540010641320303" alt=""></p>
 <h2 class="mume-header" id="02-nfa">02-nfa</h2>
 
 <h3 class="mume-header" id="esercizio-05e">Esercizio 05E</h3>
 
 <p>Insieme di tutte le stringhe che finiscono con 01.</p>
-<p><img src="immagini\0205E.png?0.25945597004693255" alt=""></p>
+<p><img src="immagini\0205E.png?0.18547011618471232" alt=""></p>
+<h3 class="mume-header" id="eercizio-07">Eercizio 07</h3>
+
+<p>Riconosce le parole che terminano con 01 “scommettendo” se sta leggendo gli ultimi due simboli oppure no</p>
+<p><img src="immagini\0207.png?0.9943085152290616" alt=""></p>
+<h3 class="mume-header" id="esercizio-12a">Esercizio 12A</h3>
+
+<p>L’insieme delle parole sull’alfabeto {0, 1, . . . , 9} tali che la cifra finale sia comparsa in precedenza.</p>
+<p><img src="immagini\0212A.png?0.012769435690432429" alt=""></p>
+<h3 class="mume-header" id="esercizio-12b">Esercizio 12B</h3>
+
+<p>L’insieme delle parole sull’alfabeto {0, 1, . . . , 9} tali che la cifra finale non sia comparsa in precedenza.</p>
+<p><img src="immagini\0212B.png?0.7185054213637783" alt=""><br>
+(Non vale per stringhe con solo 1 cifra ripetuta più di una volta)</p>
+<h3 class="mume-header" id="esercizio-12c">Esercizio 12C</h3>
+
+<p>L’insieme delle parole di 0 e 1 tali che esistono due 0 separati da un numero di posizioni multiplo di 4 (0 è un multiplo di 4).</p>
+<p><img src="immagini\0212C.png?0.23933440671154615" alt=""></p>
+<h3 class="mume-header" id="esercizio-13">Esercizio 13</h3>
+
+<p>Consideriamo l’alfabeto Σ = {a, b, c, d} e costruiamo un automa non deterministico che riconosce il linguaggio di tutte le parole tali che uno dei simboli dell’alfabeto non compare mai:</p>
+<ul>
+<li>tutte le parole che non contengono a</li>
+<li>+tutte le parole che non contengono b</li>
+<li>+tutte le parole che non contengono c</li>
+<li>+tutte le parole che non contengono d</li>
+</ul>
+<p><img src="immagini\0213.png?0.5369665637024938" alt=""></p>
 <h2 class="mume-header" id="03-epsilon">03-epsilon</h2>
 
 <h3 class="mume-header" id="esercizio-04">Esercizio 04</h3>
@@ -293,7 +325,7 @@ code.language-yaml {
 <li>Un’altra stringa di cifre decimali</li>
 <li>Una delle stringhe e può essere vuota, ma non entrambe</li>
 </ul>
-<p><img src="immagini\0304.png?0.543555181627446" alt=""></p>
+<p><img src="immagini\0304.png?0.6764751204528536" alt=""></p>
 
       </div>
       <div class="md-sidebar-toc"><ul>
@@ -310,6 +342,11 @@ code.language-yaml {
 <li><a href="#02-nfa">02-nfa</a>
 <ul>
 <li><a href="#esercizio-05e">Esercizio 05E</a></li>
+<li><a href="#eercizio-07">Eercizio 07</a></li>
+<li><a href="#esercizio-12a">Esercizio 12A</a></li>
+<li><a href="#esercizio-12b">Esercizio 12B</a></li>
+<li><a href="#esercizio-12c">Esercizio 12C</a></li>
+<li><a href="#esercizio-13">Esercizio 13</a></li>
 </ul>
 </li>
 <li><a href="#03-epsilon">03-epsilon</a>

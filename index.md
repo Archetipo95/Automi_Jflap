@@ -17,6 +17,11 @@ NON GARANTISCO LA CORRETTEZZA DEGLI ESERCIZI
 	* [Esercizio 24](#esercizio-24)
 * [02-nfa](#02-nfa)
 	* [Esercizio 05E](#esercizio-05e)
+	* [Eercizio 07](#eercizio-07)
+	* [Esercizio 12A](#esercizio-12a)
+	* [Esercizio 12B](#esercizio-12b)
+	* [Esercizio 12C](#esercizio-12c)
+	* [Esercizio 13](#esercizio-13)
 * [03-epsilon](#03-epsilon)
 	* [Esercizio 04](#esercizio-04)
 
@@ -74,6 +79,42 @@ Modellare il comportamento di un distributore di bibite con un DFA. Il modello d
 Insieme di tutte le stringhe che finiscono con 01.
 
 @import "immagini/0205E.png"- [Raccolta esercizi](#raccolta-esercizi)
+
+### Eercizio 07
+
+Riconosce le parole che terminano con 01 “scommettendo” se sta leggendo gli ultimi due simboli oppure no
+
+@import "immagini/0207.png"- [Raccolta esercizi](#raccolta-esercizi)
+
+### Esercizio 12A
+
+L’insieme delle parole sull’alfabeto {0, 1, . . . , 9} tali che la cifra finale sia comparsa in precedenza.
+
+@import "immagini/0212A.png"- [Raccolta esercizi](#raccolta-esercizi)
+
+### Esercizio 12B
+
+L’insieme delle parole sull’alfabeto {0, 1, . . . , 9} tali che la cifra finale non sia comparsa in precedenza.
+
+@import "immagini/0212B.png"- [Raccolta esercizi](#raccolta-esercizi)
+(Non vale per stringhe con solo 1 cifra ripetuta più di una volta)
+
+### Esercizio 12C
+
+L’insieme delle parole di 0 e 1 tali che esistono due 0 separati da un numero di posizioni multiplo di 4 (0 è un multiplo di 4).
+
+@import "immagini/0212C.png"- [Raccolta esercizi](#raccolta-esercizi)
+
+### Esercizio 13
+
+Consideriamo l’alfabeto Σ = {a, b, c, d} e costruiamo un automa non deterministico che riconosce il linguaggio di tutte le parole tali che uno dei simboli dell’alfabeto non compare mai:
+
+* tutte le parole che non contengono a
+* +tutte le parole che non contengono b
+* +tutte le parole che non contengono c
+* +tutte le parole che non contengono d
+
+@import "immagini/0213.png"- [Raccolta esercizi](#raccolta-esercizi)
 
 ## 03-epsilon
 
