@@ -22,6 +22,9 @@ NON GARANTISCO LA CORRETTEZZA DEGLI ESERCIZI
 	* [Esercizio 12B](#esercizio-12b)
 	* [Esercizio 12C](#esercizio-12c)
 	* [Esercizio 13](#esercizio-13)
+	* [Esercizio 23](#esercizio-23)
+	* [Esercizio 24](#esercizio-24-1)
+	* [Esercizio 25](#esercizio-25)
 * [03-epsilon](#03-epsilon)
 	* [Esercizio 04](#esercizio-04)
 
@@ -115,6 +118,37 @@ Consideriamo l’alfabeto Σ = {a, b, c, d} e costruiamo un automa non determini
 * +tutte le parole che non contengono d
 
 @import "immagini/0213.png"- [Raccolta esercizi](#raccolta-esercizi)
+
+### Esercizio 23
+
+Determinare il DFA equivalente all’NFA con la seguente tabella di transizione:
+
+|| 0 | 1|
+|-|-|-|
+|$\rightarrow q_0$|{$q_0$}|{$q_0$,$q_1$}|
+|$q_1$|{$q_1$}|{$q_0$,$q_2$}|
+|*$q_2$|{$q_1$,$q_2$}|{$q_0$,$q_1$,$q_2$}|
+
+@import "immagini/0223.png"- [Raccolta esercizi](#raccolta-esercizi)
+
+Qual è il linguaggio accettato dall’automa?
+
+### Esercizio 24
+
+Trasformare il seguente NFA in DFA.
+
+@import "immagini/0224Consegna.png"- [Raccolta esercizi](#raccolta-esercizi)
+
+@import "immagini/0224.png"- [Raccolta esercizi](#raccolta-esercizi)
+
+### Esercizio 25
+
+Determinare il linguaggio riconosciuto dall’automa.
+Costruire un DFA equivalente.
+
+@import "immagini/0225Consegna.png"- [Raccolta esercizi](#raccolta-esercizi)
+
+@import "immagini/0225.png"- [Raccolta esercizi](#raccolta-esercizi)
 
 ## 03-epsilon
 
