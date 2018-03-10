@@ -26,7 +26,12 @@ NON GARANTISCO LA CORRETTEZZA DEGLI ESERCIZI
 	* [Esercizio 24](#esercizio-24-1)
 	* [Esercizio 25](#esercizio-25)
 * [03-epsilon](#03-epsilon)
+	* [Esercizio 02](#esercizio-02)
 	* [Esercizio 04](#esercizio-04)
+	* [Esercizio 18](#esercizio-18)
+* [03-regexp](#03-regexp)
+	* [Esercizio](#esercizio)
+* [Credits](#credits)
 
 <!-- /code_chunk_output -->
 
@@ -133,6 +138,8 @@ Determinare il DFA equivalente all’NFA con la seguente tabella di transizione:
 
 Qual è il linguaggio accettato dall’automa?
 
+Tutte le stringhe che appartengono all'alfabeto (0,1) e che contengono almeno due 1.
+
 ### Esercizio 24
 
 Trasformare il seguente NFA in DFA.
@@ -152,6 +159,19 @@ Costruire un DFA equivalente.
 
 ## 03-epsilon
 
+### Esercizio 02
+
+Convertire il seguente NFA in DFA:
+
+|| 0 | 1|
+|-|-|-|
+|$\rightarrow$A|{A,C}|{B}|
+|*B|{C}|{B}|
+|C|{B}|{D}|
+|D|{$\emptyset$}|{$\emptyset$}|
+
+@import "immagini/0302.png"- [Raccolta esercizi](#raccolta-esercizi)
+
 ### Esercizio 04
 
 Costruiamo un NFA che accetta numeri decimali:
@@ -163,3 +183,32 @@ Costruiamo un NFA che accetta numeri decimali:
 * Una delle stringhe e può essere vuota, ma non entrambe
 
 @import "immagini/0304.png"- [Raccolta esercizi](#raccolta-esercizi)
+
+### Esercizio 18
+
+1. Costruiamo un ε-NFA che riconosce le parole costituite da:
+   * zero o più a
+   * seguite da zero o più b
+   * seguite da zero o più c
+
+   @import "immagini/0318.png"- [Raccolta esercizi](#raccolta-esercizi)
+
+2. Calcolare ECLOSE di ogni stato dell’automa
+   * ECLOSE(q0) = {q0, q1, q2}
+   * ECLOSE(q1) = {q1, q2}
+   * ECLOSE(q2) = {q2}
+3. Convertire l’ε-NFA in DFA
+
+   //todo
+
+## 03-regexp
+
+### Esercizio
+
+//todo
+
+## Credits
+
+* [JFLAP](http://www.jflap.org/ "Jflap official site")
+* [MPE](https://shd101wyy.github.io/markdown-preview-enhanced/#/ "Markdown Preview Enhanced")
+* [Repository link](https://archetipo95.github.io/Automi_Jflap/)

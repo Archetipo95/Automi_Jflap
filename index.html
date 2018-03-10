@@ -245,9 +245,17 @@ code.language-yaml {
 </li>
 <li><a href="#03-epsilon">03-epsilon</a>
 <ul>
+<li><a href="#esercizio-02">Esercizio 02</a></li>
 <li><a href="#esercizio-04">Esercizio 04</a></li>
+<li><a href="#esercizio-18">Esercizio 18</a></li>
 </ul>
 </li>
+<li><a href="#03-regexp">03-regexp</a>
+<ul>
+<li><a href="#esercizio">Esercizio</a></li>
+</ul>
+</li>
+<li><a href="#credits">Credits</a></li>
 </ul>
 <p>Il nome di ogni esercizio è dato dal numero della pagina della slide in cui si trova e da una lettera se presenti più esercizi nella medesima pagina.</p>
 <h2 class="mume-header" id="01-intro-dfa">01-intro-dfa</h2>
@@ -255,23 +263,23 @@ code.language-yaml {
 <h3 class="mume-header" id="esercizio-22">Esercizio 22</h3>
 
 <p>Automa che accetta il linguaggio delle stringhe con 01 come sottostringa.</p>
-<p><img src="immagini\0122.png?0.8915992903493091" alt=""></p>
+<p><img src="immagini\0122.png?0.9149559871190118" alt=""></p>
 <h3 class="mume-header" id="esercizio-23a">Esercizio 23A</h3>
 
 <p>Insieme di tutte e sole le stringhe con un numero pari di 0 e un numero pari di 1.</p>
-<p><img src="immagini\0123A.png?0.10889117435857276" alt=""></p>
+<p><img src="immagini\0123A.png?0.9420518298089262" alt=""></p>
 <h3 class="mume-header" id="esercizio-23b">Esercizio 23B</h3>
 
 <p>Insieme di tutte le stringhe che finiscono con 00.</p>
-<p><img src="immagini\0123B.png?0.10388897452391443" alt=""></p>
+<p><img src="immagini\0123B.png?0.46227797109693314" alt=""></p>
 <h3 class="mume-header" id="esercizio-23c">Esercizio 23C</h3>
 
 <p>Insieme di tutte le stringhe che contengono esattamente tre zeri (anche non consecutivi).</p>
-<p><img src="immagini\0123C.png?0.12871225522209984" alt=""></p>
+<p><img src="immagini\0123C.png?0.6347068523807577" alt=""></p>
 <h3 class="mume-header" id="esercizio-23d">Esercizio 23D</h3>
 
 <p>Insieme delle stringhe che cominciano o finiscono (o entrambe le cose) con 01.</p>
-<p><img src="immagini\0123D.png?0.9254021444016169" alt=""></p>
+<p><img src="immagini\0123D.png?0.8480920583560361" alt=""></p>
 <h3 class="mume-header" id="esercizio-24">Esercizio 24</h3>
 
 <p>Modellare il comportamento di un distributore di bibite con un DFA. Il modello deve rispettare le seguenti specifiche:</p>
@@ -281,30 +289,30 @@ code.language-yaml {
 <li>Appena le monete inserite raggiungono o superano il costo della bibita, il distributore emette una lattina</li>
 <li>Il distributore dà il resto (se serve) subito dopo aver emesso la lattina</li>
 </ul>
-<p><img src="immagini\0124.png?0.31988280792873636" alt=""></p>
+<p><img src="immagini\0124.png?0.2628531533455545" alt=""></p>
 <h2 class="mume-header" id="02-nfa">02-nfa</h2>
 
 <h3 class="mume-header" id="esercizio-05e">Esercizio 05E</h3>
 
 <p>Insieme di tutte le stringhe che finiscono con 01.</p>
-<p><img src="immagini\0205E.png?0.8131502172293656" alt=""></p>
+<p><img src="immagini\0205E.png?0.1423851073783473" alt=""></p>
 <h3 class="mume-header" id="eercizio-07">Eercizio 07</h3>
 
 <p>Riconosce le parole che terminano con 01 “scommettendo” se sta leggendo gli ultimi due simboli oppure no</p>
-<p><img src="immagini\0207.png?0.9253584674727502" alt=""></p>
+<p><img src="immagini\0207.png?0.5690567900601169" alt=""></p>
 <h3 class="mume-header" id="esercizio-12a">Esercizio 12A</h3>
 
 <p>L’insieme delle parole sull’alfabeto {0, 1, . . . , 9} tali che la cifra finale sia comparsa in precedenza.</p>
-<p><img src="immagini\0212A.png?0.7539583898080231" alt=""></p>
+<p><img src="immagini\0212A.png?0.4437322610893262" alt=""></p>
 <h3 class="mume-header" id="esercizio-12b">Esercizio 12B</h3>
 
 <p>L’insieme delle parole sull’alfabeto {0, 1, . . . , 9} tali che la cifra finale non sia comparsa in precedenza.</p>
-<p><img src="immagini\0212B.png?0.9851310672775688" alt=""><br>
+<p><img src="immagini\0212B.png?0.5045253485438659" alt=""><br>
 (Non vale per stringhe con solo 1 cifra ripetuta più di una volta)</p>
 <h3 class="mume-header" id="esercizio-12c">Esercizio 12C</h3>
 
 <p>L’insieme delle parole di 0 e 1 tali che esistono due 0 separati da un numero di posizioni multiplo di 4 (0 è un multiplo di 4).</p>
-<p><img src="immagini\0212C.png?0.27333224302893" alt=""></p>
+<p><img src="immagini\0212C.png?0.41440768910945436" alt=""></p>
 <h3 class="mume-header" id="esercizio-13">Esercizio 13</h3>
 
 <p>Consideriamo l’alfabeto Σ = {a, b, c, d} e costruiamo un automa non deterministico che riconosce il linguaggio di tutte le parole tali che uno dei simboli dell’alfabeto non compare mai:</p>
@@ -314,7 +322,7 @@ code.language-yaml {
 <li>+tutte le parole che non contengono c</li>
 <li>+tutte le parole che non contengono d</li>
 </ul>
-<p><img src="immagini\0213.png?0.9846008786847906" alt=""></p>
+<p><img src="immagini\0213.png?0.011556398496299192" alt=""></p>
 <h3 class="mume-header" id="esercizio-23">Esercizio 23</h3>
 
 <p>Determinare il DFA equivalente all’NFA con la seguente tabella di transizione:</p>
@@ -344,21 +352,57 @@ code.language-yaml {
 </tr>
 </tbody>
 </table>
-<p><img src="immagini\0223.png?0.6673060735605929" alt=""></p>
+<p><img src="immagini\0223.png?0.3687182924110797" alt=""></p>
 <p>Qual è il linguaggio accettato dall’automa?</p>
+<p>Tutte le stringhe che appartengono all'alfabeto (0,1) e che contengono almeno due 1.</p>
 <h3 class="mume-header" id="esercizio-24-1">Esercizio 24</h3>
 
 <p>Trasformare il seguente NFA in DFA.</p>
-<p><img src="immagini\0224Consegna.png?0.3977282923837824" alt=""></p>
-<p><img src="immagini\0224.png?0.6220933066293097" alt=""></p>
+<p><img src="immagini\0224Consegna.png?0.02476830608306302" alt=""></p>
+<p><img src="immagini\0224.png?0.7068721107829206" alt=""></p>
 <h3 class="mume-header" id="esercizio-25">Esercizio 25</h3>
 
 <p>Determinare il linguaggio riconosciuto dall’automa.<br>
 Costruire un DFA equivalente.</p>
-<p><img src="immagini\0225Consegna.png?0.9993678381494935" alt=""></p>
-<p><img src="immagini\0225.png?0.019814880371654686" alt=""></p>
+<p><img src="immagini\0225Consegna.png?0.5360457762038684" alt=""></p>
+<p><img src="immagini\0225.png?0.6492104769244607" alt=""></p>
 <h2 class="mume-header" id="03-epsilon">03-epsilon</h2>
 
+<h3 class="mume-header" id="esercizio-02">Esercizio 02</h3>
+
+<p>Convertire il seguente NFA in DFA:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>0</th>
+<th>1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\rightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.36687em;"></span><span class="strut bottom" style="height:0.36687em;vertical-align:0em;"></span><span class="base"><span class="mrel">→</span></span></span></span>A</td>
+<td>{A,C}</td>
+<td>{B}</td>
+</tr>
+<tr>
+<td>*B</td>
+<td>{C}</td>
+<td>{B}</td>
+</tr>
+<tr>
+<td>C</td>
+<td>{B}</td>
+<td>{D}</td>
+</tr>
+<tr>
+<td>D</td>
+<td>{<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">∅</mi></mrow><annotation encoding="application/x-tex">\emptyset</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:0.80556em;vertical-align:-0.05556em;"></span><span class="base"><span class="mord">∅</span></span></span></span>}</td>
+<td>{<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">∅</mi></mrow><annotation encoding="application/x-tex">\emptyset</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:0.80556em;vertical-align:-0.05556em;"></span><span class="base"><span class="mord">∅</span></span></span></span>}</td>
+</tr>
+</tbody>
+</table>
+<p><img src="immagini\0302.png?0.7420671740580806" alt=""></p>
 <h3 class="mume-header" id="esercizio-04">Esercizio 04</h3>
 
 <p>Costruiamo un NFA che accetta numeri decimali:</p>
@@ -369,7 +413,44 @@ Costruire un DFA equivalente.</p>
 <li>Un’altra stringa di cifre decimali</li>
 <li>Una delle stringhe e può essere vuota, ma non entrambe</li>
 </ul>
-<p><img src="immagini\0304.png?0.4122561848892383" alt=""></p>
+<p><img src="immagini\0304.png?0.37653711194880013" alt=""></p>
+<h3 class="mume-header" id="esercizio-18">Esercizio 18</h3>
+
+<ol>
+<li>
+<p>Costruiamo un ε-NFA che riconosce le parole costituite da:</p>
+<ul>
+<li>zero o più a</li>
+<li>seguite da zero o più b</li>
+<li>seguite da zero o più c</li>
+</ul>
+<p><img src="immagini\0318.png?0.11931804223322962" alt=""></p>
+</li>
+<li>
+<p>Calcolare ECLOSE di ogni stato dell’automa</p>
+<ul>
+<li>ECLOSE(q0) = {q0, q1, q2}</li>
+<li>ECLOSE(q1) = {q1, q2}</li>
+<li>ECLOSE(q2) = {q2}</li>
+</ul>
+</li>
+<li>
+<p>Convertire l’ε-NFA in DFA</p>
+<p>//todo</p>
+</li>
+</ol>
+<h2 class="mume-header" id="03-regexp">03-regexp</h2>
+
+<h3 class="mume-header" id="esercizio">Esercizio</h3>
+
+<p>//todo</p>
+<h2 class="mume-header" id="credits">Credits</h2>
+
+<ul>
+<li><a href="http://www.jflap.org/" title="Jflap official site">JFLAP</a></li>
+<li><a href="https://shd101wyy.github.io/markdown-preview-enhanced/#/" title="Markdown Preview Enhanced">MPE</a></li>
+<li><a href="https://archetipo95.github.io/Automi_Jflap/">Repository link</a></li>
+</ul>
 
       </div>
       <div class="md-sidebar-toc"><ul>
@@ -398,9 +479,17 @@ Costruire un DFA equivalente.</p>
 </li>
 <li><a href="#03-epsilon">03-epsilon</a>
 <ul>
+<li><a href="#esercizio-02">Esercizio 02</a></li>
 <li><a href="#esercizio-04">Esercizio 04</a></li>
+<li><a href="#esercizio-18">Esercizio 18</a></li>
 </ul>
 </li>
+<li><a href="#03-regexp">03-regexp</a>
+<ul>
+<li><a href="#esercizio">Esercizio</a></li>
+</ul>
+</li>
+<li><a href="#credits">Credits</a></li>
 </ul>
 </div>
       <a id="sidebar-toc-btn">≡</a>
