@@ -287,4 +287,4 @@ a\*ba\*ba\*(ba\*+$\varepsilon$)
 
 * [JFLAP](http://www.jflap.org/ "Jflap official site")
 * [MPE](https://shd101wyy.github.io/markdown-preview-enhanced/#/ "Markdown Preview Enhanced")
-* [Repository link](https://archetipo95.github.io/Automi_Jflap/)
+* [Repository link](https://github.com/Archetipo95/Automi_Jflap)
