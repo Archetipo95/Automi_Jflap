@@ -30,6 +30,15 @@ Il nome di ogni esercizio è dato dal numero della slide più il numero della pa
 	* [Esercizio 0302](#esercizio-0302)
 	* [Esercizio 0304](#esercizio-0304)
 	* [Esercizio 0318](#esercizio-0318)
+* [04-regexp](#04-regexp)
+* [05-esercizi-er](#05-esercizi-er)
+	* [Esercizio 0507A](#esercizio-0507a)
+	* [Esercizio 0507B](#esercizio-0507b)
+	* [Esercizio 0507C](#esercizio-0507c)
+	* [Esercizio 0508A](#esercizio-0508a)
+	* [Esercizio 0508B](#esercizio-0508b)
+	* [Esercizio 0508C](#esercizio-0508c)
+	* [Esercizio 0508D](#esercizio-0508d)
 * [Tutorato 01](#tutorato-01)
 	* [Esercizio tut01A](#esercizio-tut01a)
 	* [Esercizio tut01B](#esercizio-tut01b)
@@ -207,6 +216,68 @@ Costruiamo un NFA che accetta numeri decimali:
 3. Convertire l’ε-NFA in DFA
 
    //todo
+
+## 04-regexp
+
+## 05-esercizi-er
+
+### Esercizio 0507A
+
+Trasformiamo (0+1)$^*$1(0+1) in $\varepsilon$-NFA
+
+@import "immagini/0507a.png"- [Raccolta esercizi](#raccolta-esercizi)
+
+### Esercizio 0507B
+
+Scrivere un’espressione regolare per rappresentare il linguaggio sull’alfabeto {a, b, c} che contiene tutte le stringhe che:
+* iniziano con a e sono composte solo di a oppure b
+* la stringa c
+
+La prima condizione si potrebbe interpretare in 2 modi diversi.
+
+1. a(a+b)$^*$+c
+2. a(a*+b*)+c
+
+### Esercizio 0507C
+
+Trasformare l’espressione regolare dell’esercizio 2 in $\varepsilon$-NFA.
+
+Primo caso:
+
+@import "immagini/0507c1.png"- [Raccolta esercizi](#raccolta-esercizi)
+
+
+Secondo caso:
+
+@import "immagini/0507c2.png"- [Raccolta esercizi](#raccolta-esercizi)
+
+### Esercizio 0508A
+
+Scrivere una espressione regolare per tutte stringhe binarie che cominciano e finiscono per 1.
+
+1(0+1)$^*$1+1
+
+@import "immagini/0508a.png"- [Raccolta esercizi](#raccolta-esercizi)
+
+### Esercizio 0508B
+
+Scrivere una espressione regolare per le stringhe binarie che contengono almeno tre 1 consecutivi.
+
+(0+1)$^*$ 111 (0+1)$^*$
+
+### Esercizio 0508C
+
+Scrivere una espressione regolare per le stringhe binarie che contengono almeno tre 1 (anche non consecutivi).
+
+(0+1)$^*$ 1 (0+1)$^*$ 1 (0+1)$^*$ 1 (0+1)$^*$
+
+### Esercizio 0508D
+
+Scrivere una espressione regolare per stringhe di testo che descriva le date in formato GG/MM/AAAA.
+
+(0+...+31)/(1+...+12)/(0+...+9)(0+...+9)(0+...+9)(0+...+9)
+
+Ovviamente non controlla gli anni bisestili e nemmeno che ci siano 30 o 31 giorni in un determinato mese.
 
 ## Tutorato 01
 
