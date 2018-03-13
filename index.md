@@ -47,6 +47,10 @@ Il nome di ogni esercizio è dato dal numero della slide più il numero della pa
 	* [Esercizio 0508B](#esercizio-0508b)
 	* [Esercizio 0508C](#esercizio-0508c)
 	* [Esercizio 0508D](#esercizio-0508d)
+* [06-dfa2re](#06-dfa2re)
+	* [Esercizio 0607A](#esercizio-0607a)
+	* [Esercizio 0607B](#esercizio-0607b)
+	* [Esercizio 0608](#esercizio-0608)
 * [Tutorato 01](#tutorato-01)
 	* [Esercizio tut01A](#esercizio-tut01a)
 	* [Esercizio tut01B](#esercizio-tut01b)
@@ -281,7 +285,6 @@ Trasformare (0 + 1)$^*$1(0 + 1) in $\varepsilon$-NFA
 
 @import "immagini/0420.png"- [Raccolta esercizi](#raccolta-esercizi)
 
-
 ## 05-esercizi-er
 
 ### Esercizio 0507A
@@ -341,6 +344,34 @@ Scrivere una espressione regolare per stringhe di testo che descriva le date in 
 (0+...+31)/(1+...+12)/(0+...+9)(0+...+9)(0+...+9)(0+...+9)
 
 Ovviamente non controlla gli anni bisestili e nemmeno che ci siano 30 o 31 giorni in un determinato mese.
+
+## 06-dfa2re
+
+### Esercizio 0607A
+
+Costruiamo l’espressione regolare equivalente al seguente NFA:
+
+@import "immagini/0607AConsegna.png"- [Raccolta esercizi](#raccolta-esercizi)
+
+@import "immagini/0607A.png"- [Raccolta esercizi](#raccolta-esercizi)
+
+//todo
+
+### Esercizio 0607B
+
+Costruiamo l’espressione regolare equivalente al seguente NFA:
+
+@import "immagini/0607BConsegna.png"- [Raccolta esercizi](#raccolta-esercizi)
+
+@import "immagini/0607B.png"- [Raccolta esercizi](#raccolta-esercizi)
+
+### Esercizio 0608
+
+Costruiamo l’espressione regolare equivalente al seguente NFA:
+
+@import "immagini/0608Consegna.png"- [Raccolta esercizi](#raccolta-esercizi)
+
+(1+0(10$^*$1+0)(1(10$^*$1+0))$^*$0)$^*$
 
 ## Tutorato 01
 
