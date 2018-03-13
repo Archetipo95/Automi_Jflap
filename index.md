@@ -31,6 +31,14 @@ Il nome di ogni esercizio è dato dal numero della slide più il numero della pa
 	* [Esercizio 0304](#esercizio-0304)
 	* [Esercizio 0318](#esercizio-0318)
 * [04-regexp](#04-regexp)
+	* [Esercizio 0412](#esercizio-0412)
+	* [Esercizio 0414A](#esercizio-0414a)
+	* [Esercizio 0414B](#esercizio-0414b)
+	* [Esercizio 0414C](#esercizio-0414c)
+	* [Esercizio 0415A](#esercizio-0415a)
+	* [Esercizio 0415B](#esercizio-0415b)
+	* [Esercizio 0415C](#esercizio-0415c)
+	* [Esercizio 0420](#esercizio-0420)
 * [05-esercizi-er](#05-esercizi-er)
 	* [Esercizio 0507A](#esercizio-0507a)
 	* [Esercizio 0507B](#esercizio-0507b)
@@ -215,9 +223,64 @@ Costruiamo un NFA che accetta numeri decimali:
    * ECLOSE(q2) = {q2}
 3. Convertire l’ε-NFA in DFA
 
-   //todo
+Vedi esercizio E tutorato 01 [Link](#esercizio-tut01e)
 
 ## 04-regexp
+
+### Esercizio 0412
+
+Scriviamo l’espressione regolare per L = {w ∈ {0, 1}$^*$ : 0 e 1 alternati in w}.
+
+(01)$^*$ + (10)$^*$ + 1(01)$^*$ + 0(10)$^*$
+
+Oppure
+
+($\varepsilon$ + 1)(01)$^*$($\varepsilon$ + 0)
+
+### Esercizio 0414A
+
+Costruire una ER sull’alfabeto {a, b, c} tale che tutte le stringhe w che contengono un numero pari di a;
+
+(b+c)$^*$ (a(b+c)$^*$a(b+c)$^*$)$^*$
+
+### Esercizio 0414B
+
+Costruire una ER sull’alfabeto {a, b, c} tale che tutte le stringhe w che contengono 4k + 1 occorrenze di b, per ogni k ≥ 0.
+
+(a+c)$^*$ (b(a+c)$^*$b(a+c)$^*$b(a+c)$^*$b(a+c)$^*$)$^*$
+
+### Esercizio 0414C
+
+Costruire una ER sull’alfabeto {a, b, c} tale che tutte le stringhe la cui lunghezza è un multiplo di 3.
+
+((a+b+c)(a+b+c)(a+b+c))$^*$
+
+### Esercizio 0415A
+
+Costruire una ER sull’alfabeto {0, 1} tale che tutte le stringhe w che contengono la sottostringa 101.
+
+(0+1)$^*$101(0+1)$^*$
+
+### Esercizio 0415B
+
+Costruire una ER sull’alfabeto {0, 1} tale che tutte le stringhe w che non contengono la sottostringa 101.
+
+0$^*$(1+000$^*$)$^*$0$^*$
+
+### Esercizio 0415C
+
+Costruire una ER sull’alfabeto {0, 1} per il linguaggio di tutti i numeri binari multipli di 3.
+
+0$^*$((1(01$^*$0)$^*$1)$^*$0$^*$)$^*$
+
+Preso da [StackOverflow](https://stackoverflow.com/questions/7974655/regex-for-binary-multiple-of-3)
+
+### Esercizio 0420
+
+Trasformare (0 + 1)$^*$1(0 + 1) in $\varepsilon$-NFA
+
+@import "immagini/0420.png"- [Raccolta esercizi](#raccolta-esercizi)
+
 
 ## 05-esercizi-er
 
