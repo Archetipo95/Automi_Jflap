@@ -1,7 +1,7 @@
 # Automi e Linguaggi formali 17/18 {ignore=true}
 
-NON GARANTISCO LA CORRETTEZZA DEGLI ESERCIZI
-(prima bozza della pagina per il momento accetto solo suggerimenti per eventuali correzioni più avanti permetterò le pull request a chi vuole contribuire).
+`NON GARANTISCO LA CORRETTEZZA DEGLI ESERCIZI`
+
 Il nome di ogni esercizio è dato dal numero della slide più il numero della pagina in cui si trova e da una lettera se presenti più esercizi nella stessa pagina.
 
 ## Raccolta esercizi {ignore=true}
@@ -452,4 +452,4 @@ a\*ba\*ba\*(ba\*+$\varepsilon$)
 
 * [JFLAP](http://www.jflap.org/ "Jflap official site")
 * [MPE](https://shd101wyy.github.io/markdown-preview-enhanced/#/ "Markdown Preview Enhanced")
-* [Repository link](https://github.com/Archetipo95/Automi_Jflap)
+* [Link Repository](https://github.com/Archetipo95/Automi_Jflap) per contribuire o segnalare errori
