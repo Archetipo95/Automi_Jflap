@@ -155,7 +155,7 @@ Consideriamo l’alfabeto Σ = {a, b, c, d} e costruiamo un automa non determini
 Determinare il DFA equivalente all’NFA con la seguente tabella di transizione:
 
 || 0 | 1|
-|-|-|-|
+|-:|:-:|:-:|
 |$\rightarrow q_0$|{$q_0$}|{$q_0$,$q_1$}|
 |$q_1$|{$q_1$}|{$q_0$,$q_2$}|
 |*$q_2$|{$q_1$,$q_2$}|{$q_0$,$q_1$,$q_2$}|
@@ -192,7 +192,7 @@ Tutte le stringhe che terminano per 001 o 110.
 Convertire il seguente NFA in DFA:
 
 || 0 | 1|
-|-|-|-|
+|-:|:-:|:-:|
 |$\rightarrow$A|{A,C}|{B}|
 |*B|{C}|{B}|
 |C|{B}|{D}|
@@ -410,7 +410,7 @@ Chiusura = insieme di tutti gli stati in cui si può arrivare seguendo le $\vare
 ENCLOSE ($q_0$)=$\{q_0,q_1,q_2\}$
 
 || a | b| c|
-|-|-|-|-|
+|-:|:-:|:-:|:-:|
 |$\rightarrow \{q_0,q_1,q_2\}$|$\{q_0,q_1,q_2\}$|$\{q_1,q_2\}$|$\{q_2\}$
 |*$\{q_1,q_2\}$|$\emptyset$|$\{q_1,q_2\}$|$\{q_2\}$
 |*$\{q_2\}$|$\emptyset$|$\emptyset$|$\{q_2\}$
