@@ -9,6 +9,14 @@ Il nome di ogni esercizio è dato dal numero della slide più il numero della pa
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 <!-- code_chunk_output -->
 
+* [Tutorato 01](#tutorato-01)
+	* [Esercizio tut01A](#esercizio-tut01a)
+	* [Esercizio tut01B](#esercizio-tut01b)
+	* [Esercizio tut01C](#esercizio-tut01c)
+	* [Esercizio tut01D](#esercizio-tut01d)
+	* [Esercizio tut01E](#esercizio-tut01e)
+	* [Esercizio tut01F](#esercizio-tut01f)
+	* [Esercizio tut01G](#esercizio-tut01g)
 * [01-intro-dfa](#01-intro-dfa)
 	* [Esercizio 0122](#esercizio-0122)
 	* [Esercizio 0123A](#esercizio-0123a)
@@ -51,17 +59,82 @@ Il nome di ogni esercizio è dato dal numero della slide più il numero della pa
 	* [Esercizio 0607A](#esercizio-0607a)
 	* [Esercizio 0607B](#esercizio-0607b)
 	* [Esercizio 0608](#esercizio-0608)
-* [Tutorato 01](#tutorato-01)
-	* [Esercizio tut01A](#esercizio-tut01a)
-	* [Esercizio tut01B](#esercizio-tut01b)
-	* [Esercizio tut01C](#esercizio-tut01c)
-	* [Esercizio tut01D](#esercizio-tut01d)
-	* [Esercizio tut01E](#esercizio-tut01e)
-	* [Esercizio tut01F](#esercizio-tut01f)
-	* [Esercizio tut01G](#esercizio-tut01g)
 * [Credits](#credits)
 
 <!-- /code_chunk_output -->
+
+## Tutorato 01
+
+### Esercizio tut01A
+
+DFA che accetta tutte le stringhe che iniziano o finiscono con 01.
+
+@import "immagini/tut01a.png"- [Raccolta esercizi](#raccolta-esercizi)
+
+### Esercizio tut01B
+
+DFA che accetta tutte le stringhe che contengono almeno 2 zeri lunghe 5 caratteri.
+
+@import "immagini/tut01b.png"- [Raccolta esercizi](#raccolta-esercizi)
+
+### Esercizio tut01C
+
+Trasformare da NFA a DFA.
+
+@import "immagini/tut01cConsegna.png"- [Raccolta esercizi](#raccolta-esercizi)
+
+@import "immagini/tut01c.png"- [Raccolta esercizi](#raccolta-esercizi)
+
+### Esercizio tut01D
+
+Vedi esercizio 25 slide 02. [LINK](#esercizio-0225)
+
+### Esercizio tut01E
+
+Trasformare da $\varepsilon$-NFA a DFA.
+
+@import "immagini/tut01eConsegna.png"- [Raccolta esercizi](#raccolta-esercizi)
+
+Chiusura = insieme di tutti gli stati in cui si può arrivare seguendo le $\varepsilon$-transizioni.
+
+ENCLOSE ($q_0$)=$\{q_0,q_1,q_2\}$
+
+|| a | b| c|
+|-:|:-:|:-:|:-:|
+|$\rightarrow \{q_0,q_1,q_2\}$|$\{q_0,q_1,q_2\}$|$\{q_1,q_2\}$|$\{q_2\}$
+|*$\{q_1,q_2\}$|$\emptyset$|$\{q_1,q_2\}$|$\{q_2\}$
+|*$\{q_2\}$|$\emptyset$|$\emptyset$|$\{q_2\}$
+|$\emptyset$|$\emptyset$|$\emptyset$|$\emptyset$
+
+@import "immagini/tut01e.png"- [Raccolta esercizi](#raccolta-esercizi)
+
+### Esercizio tut01F
+
+DFA che accetta multipli di 3 in binario.
+
+@import "immagini/tut01f.png"- [Raccolta esercizi](#raccolta-esercizi)
+
+In questo caso bisogna prendere il binario e dividerlo per 3 e poi osservare i resti.
+Gli stati rappresentano:
+* $q_0$ tutti i binari con resto 0
+* $q_1$ tutti i binari con resto 1
+* $q_2$ tutti i binari con resto 2
+
+Ci interessa resto 0 per trovare i multipli di 3 quindi $q_0$ è lo stato finale.
+Partendo da $q_0$ potrei trovare 0 (rimango in $q_0$) oppure 1 (mi sposto in $q_1$ $\rightarrow$ resto 1). Se sono in $q_1$ significa che prima ho trovato un 1 quindi trovando un altro 1 (ottenedo 11 che da resto 0 $\rightarrow$ torno in $q_0$) oppure 0 (ottenengo 10 che mi da resto 2 $\rightarrow$ vado in $q_2$). Essendo arrivato in $q_2$ ho trovato 10 e da qui posso trovare 0 (ottengo 100 che mi da resto 1 $\rightarrow$ vado in $q_1$) oppure 1 (ottengo 101 che mi da resto 2 $\rightarrow$ rimango in $q_2$).
+
+### Esercizio tut01G
+
+Espressioni regolari con:
+
+* 2 oppure 3 `b` con $\Sigma$={a,b}
+a\*ba\*ba\*(ba\*+$\varepsilon$)
+
+* numero di zeri multiplo di 5 con $\Sigma$={0,1}
+(1\*01\*01\*01\*01\*01\*)\*1\*
+
+* lunghezza stringa multiplo di 3 con  $\Sigma$={a,b,c}\*
+((a+b+c)(a+b+c)(a+b+c))\*
 
 ## 01-intro-dfa
 
@@ -353,10 +426,13 @@ Costruiamo l’espressione regolare equivalente al seguente NFA:
 
 @import "immagini/0607AConsegna.png"- [Raccolta esercizi](#raccolta-esercizi)
 
-@import "immagini/0607A.png"- [Raccolta esercizi](#raccolta-esercizi)
+Eliminando gli stati $q_1$ e $q_2$:
+@import "immagini/0607A1.png"- [Raccolta esercizi](#raccolta-esercizi)
+Eliminando gli stati $q_1$ e $q_3$:
+@import "immagini/0607A2.png"- [Raccolta esercizi](#raccolta-esercizi)
 
-//todo
-
+Sommando le 2 espressioni precedenti si ottiene la ER cercata:
+((0+1)$^*$1(0+1)(0+1))+(0+1($^*$1(0+1))
 ### Esercizio 0607B
 
 Costruiamo l’espressione regolare equivalente al seguente NFA:
@@ -372,81 +448,6 @@ Costruiamo l’espressione regolare equivalente al seguente NFA:
 @import "immagini/0608Consegna.png"- [Raccolta esercizi](#raccolta-esercizi)
 
 (1+0(10$^*$1+0)(1(10$^*$1+0))$^*$0)$^*$
-
-## Tutorato 01
-
-### Esercizio tut01A
-
-DFA che accetta tutte le stringhe che iniziano o finiscono con 01.
-
-@import "immagini/tut01a.png"- [Raccolta esercizi](#raccolta-esercizi)
-
-### Esercizio tut01B
-
-DFA che accetta tutte le stringhe che contengono almeno 2 zeri lunghe 5 caratteri.
-
-@import "immagini/tut01b.png"- [Raccolta esercizi](#raccolta-esercizi)
-
-### Esercizio tut01C
-
-Trasformare da NFA a DFA.
-
-@import "immagini/tut01cConsegna.png"- [Raccolta esercizi](#raccolta-esercizi)
-
-@import "immagini/tut01c.png"- [Raccolta esercizi](#raccolta-esercizi)
-
-### Esercizio tut01D
-
-Vedi esercizio 25 slide 02. [LINK](#esercizio-0225)
-
-### Esercizio tut01E
-
-Trasformare da $\varepsilon$-NFA a DFA.
-
-@import "immagini/tut01eConsegna.png"- [Raccolta esercizi](#raccolta-esercizi)
-
-Chiusura = insieme di tutti gli stati in cui si può arrivare seguendo le $\varepsilon$-transizioni.
-
-ENCLOSE ($q_0$)=$\{q_0,q_1,q_2\}$
-
-|| a | b| c|
-|-:|:-:|:-:|:-:|
-|$\rightarrow \{q_0,q_1,q_2\}$|$\{q_0,q_1,q_2\}$|$\{q_1,q_2\}$|$\{q_2\}$
-|*$\{q_1,q_2\}$|$\emptyset$|$\{q_1,q_2\}$|$\{q_2\}$
-|*$\{q_2\}$|$\emptyset$|$\emptyset$|$\{q_2\}$
-|$\emptyset$|$\emptyset$|$\emptyset$|$\emptyset$
-
-@import "immagini/tut01e.png"- [Raccolta esercizi](#raccolta-esercizi)
-
-### Esercizio tut01F
-
-DFA che accetta multipli di 3 in binario.
-
-@import "immagini/tut01f.png"- [Raccolta esercizi](#raccolta-esercizi)
-
-In questo caso bisogna prendere il binario e dividerlo per 3 e poi osservare i resti.
-Gli stati rappresentano:
-* $q_0$ tutti i binari con resto 0
-* $q_1$ tutti i binari con resto 1
-* $q_2$ tutti i binari con resto 2
-
-Ci interessa resto 0 per trovare i multipli di 3 quindi $q_0$ è lo stato finale.
-Partendo da $q_0$ potrei trovare 0 (rimango in $q_0$) oppure 1 (mi sposto in $q_1$ $\rightarrow$ resto 1). Se sono in $q_1$ significa che prima ho trovato un 1 quindi trovando un altro 1 (ottenedo 11 che da resto 0 $\rightarrow$ torno in $q_0$) oppure 0 (ottenengo 10 che mi da resto 2 $\rightarrow$ vado in $q_2$). Essendo arrivato in $q_2$ ho trovato 10 e da qui posso trovare 0 (ottengo 100 che mi da resto 1 $\rightarrow$ vado in $q_1$) oppure 1 (ottengo 101 che mi da resto 2 $\rightarrow$ rimango in $q_2$).
-
-### Esercizio tut01G
-
-Espressioni regolari con:
-
-* 2 oppure 3 `b` con $\Sigma$={a,b}
-a\*ba\*ba\*(ba\*+$\varepsilon$)
-
-* numero di zeri multiplo di 5 con $\Sigma$={0,1}
-(1\*01\*01\*01\*01\*01\*)\*1\*
-
-* lunghezza stringa multiplo di 3 con  $\Sigma$={a,b,c}\*
-((a+b+c)(a+b+c)(a+b+c))\*
-
-
 
 ## Credits
 
