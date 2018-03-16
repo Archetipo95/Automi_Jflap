@@ -59,6 +59,10 @@ Il nome di ogni esercizio è dato dal numero della slide più il numero della pa
 	* [Esercizio 0707A](#esercizio-0707a)
 	* [Esercizio 0707B](#esercizio-0707b)
 	* [Esercizio 0708](#esercizio-0708)
+* [08-pumpinglemma](#08-pumpinglemma)
+	* [Esercizio 0811](#esercizio-0811)
+	* [Esercizio 0812](#esercizio-0812)
+	* [Esercizio 0813](#esercizio-0813)
 * [Credits](#credits)
 
 <!-- /code_chunk_output -->
@@ -446,6 +450,52 @@ Costruiamo l’espressione regolare equivalente al seguente NFA:
 @import "immagini/0708Consegna.png"- [Raccolta esercizi](#raccolta-esercizi)
 
 (1+0(10$^*$1+0)(1(10$^*$1+0))$^*$0)$^*$
+
+## 08-pumpinglemma
+
+### Esercizio 0811
+
+Sia $L_{ab}$ il linguaggio delle stringhe sull’alfabeto {a, b} con un numero di b maggiore del numero di a. $L_{ab}$ è regolare?
+
+No, $L_{ab}$ non è regolare:
+* supponiamo per assurdo che lo sia
+* sia $n$ la lunghezza data dal Pumping Lemma
+* consideriamo la parola $w = a^nb^{n+1}$
+* prendiamo un qualsiasi split $w = xyz$ tale che $y \ne \varepsilon$ e $\mid xy \mid ≤ n$:
+
+   $w =
+\underbrace{aa...}_{x}
+\underbrace{...aa}_{y}
+\underbrace{abbbbb}_{z}$
+
+* per il Pumping lemma, anche $xy^2z$ ∈ Lab, ma contiene più a che b ⇒ **assurdo**.
+
+### Esercizio 0812
+
+Il linguaggio $L_{rev}$ = {$ww_R$ : w ∈ {a, b}$^*$} è regolare?
+
+No, $L_{rev}$ non è regolare:
+* supponiamo per assurdo che lo sia
+* sia $n$ la lunghezza data dal Pumping Lemma
+* consideriamo la parola $w = a^nbba^n$
+* prendiamo un qualsiasi split $w = xyz$ tale che $y \ne \varepsilon$ e $\mid xy \mid ≤ n$:
+
+   $w =
+\underbrace{aa...}_{x}
+\underbrace{...aa}_{y}
+\underbrace{abbaaa..aa}_{z}$
+
+* per il Pumping lemma, anche $xy^0z = xz ∈ L_{rev}$, ma non la posso spezzare in $ww^R$ ⇒ **assurdo**.
+
+### Esercizio 0813
+
+Il linguaggio $L_{nk}$ = {$a^nb^k : n$ è dispari oppure k è pari} è regolare?
+
+Sì, $L_{nk}$ è regolare:
+* è rappresentato dall’espressione regolare a(aa)$^*$b$^*$ + a$^*$(bb)$^*$
+* e riconosciuto dall'automa
+
+@import "immagini/0813.png"- [Raccolta esercizi](#raccolta-esercizi)
 
 ## Credits
 
