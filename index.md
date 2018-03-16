@@ -24,41 +24,41 @@ Il nome di ogni esercizio è dato dal numero della slide più il numero della pa
 	* [Esercizio 0123C](#esercizio-0123c)
 	* [Esercizio 0123D](#esercizio-0123d)
 	* [Esercizio 0124](#esercizio-0124)
-* [02-nfa](#02-nfa)
-	* [Esercizio 0205E](#esercizio-0205e)
-	* [Eercizio 0207](#eercizio-0207)
-	* [Esercizio 0212A](#esercizio-0212a)
-	* [Esercizio 0212B](#esercizio-0212b)
-	* [Esercizio 0212C](#esercizio-0212c)
-	* [Esercizio 0213](#esercizio-0213)
-	* [Esercizio 0223](#esercizio-0223)
-	* [Esercizio 0224](#esercizio-0224)
-	* [Esercizio 0225](#esercizio-0225)
-* [03-epsilon](#03-epsilon)
-	* [Esercizio 0302](#esercizio-0302)
-	* [Esercizio 0304](#esercizio-0304)
-	* [Esercizio 0318](#esercizio-0318)
-* [04-regexp](#04-regexp)
-	* [Esercizio 0412](#esercizio-0412)
-	* [Esercizio 0414A](#esercizio-0414a)
-	* [Esercizio 0414B](#esercizio-0414b)
-	* [Esercizio 0414C](#esercizio-0414c)
-	* [Esercizio 0415A](#esercizio-0415a)
-	* [Esercizio 0415B](#esercizio-0415b)
-	* [Esercizio 0415C](#esercizio-0415c)
-	* [Esercizio 0420](#esercizio-0420)
-* [05-esercizi-er](#05-esercizi-er)
-	* [Esercizio 0507A](#esercizio-0507a)
-	* [Esercizio 0507B](#esercizio-0507b)
-	* [Esercizio 0507C](#esercizio-0507c)
-	* [Esercizio 0508A](#esercizio-0508a)
-	* [Esercizio 0508B](#esercizio-0508b)
-	* [Esercizio 0508C](#esercizio-0508c)
-	* [Esercizio 0508D](#esercizio-0508d)
-* [06-dfa2re](#06-dfa2re)
+* [02-03-nfa](#02-03-nfa)
+	* [Esercizio 02-0305E](#esercizio-02-0305e)
+	* [Esercizio 02-0307](#esercizio-02-0307)
+	* [Esercizio 02-0312A](#esercizio-02-0312a)
+	* [Esercizio 02-0312B](#esercizio-02-0312b)
+	* [Esercizio 02-0312C](#esercizio-02-0312c)
+	* [Esercizio 02-0313](#esercizio-02-0313)
+	* [Esercizio 02-0323](#esercizio-02-0323)
+	* [Esercizio 02-0324](#esercizio-02-0324)
+	* [Esercizio 02-0325](#esercizio-02-0325)
+* [04-epsilon](#04-epsilon)
+	* [Esercizio 0402](#esercizio-0402)
+	* [Esercizio 0404](#esercizio-0404)
+	* [Esercizio 0418](#esercizio-0418)
+* [05-regexp](#05-regexp)
+	* [Esercizio 0512](#esercizio-0512)
+	* [Esercizio 0514A](#esercizio-0514a)
+	* [Esercizio 0514B](#esercizio-0514b)
+	* [Esercizio 0514C](#esercizio-0514c)
+	* [Esercizio 0515A](#esercizio-0515a)
+	* [Esercizio 0515B](#esercizio-0515b)
+	* [Esercizio 0515C](#esercizio-0515c)
+	* [Esercizio 0520](#esercizio-0520)
+* [06-esercizi-er](#06-esercizi-er)
 	* [Esercizio 0607A](#esercizio-0607a)
 	* [Esercizio 0607B](#esercizio-0607b)
-	* [Esercizio 0608](#esercizio-0608)
+	* [Esercizio 0607C](#esercizio-0607c)
+	* [Esercizio 0608A](#esercizio-0608a)
+	* [Esercizio 0608B](#esercizio-0608b)
+	* [Esercizio 0608C](#esercizio-0608c)
+	* [Esercizio 0608D](#esercizio-0608d)
+* [07-dfa2re](#07-dfa2re)
+	* [Esercizio 0707A](#esercizio-0707a)
+	* [Esercizio 0707B](#esercizio-0707b)
+	* [Esercizio 0708](#esercizio-0708)
 * [Credits](#credits)
 
 <!-- /code_chunk_output -->
@@ -87,7 +87,7 @@ Trasformare da NFA a DFA.
 
 ### Esercizio tut01D
 
-Vedi esercizio 25 slide 02. [LINK](#esercizio-0225)
+Vedi esercizio 25 slide 02. [LINK](#esercizio-02-0325)
 
 ### Esercizio tut01E
 
@@ -179,40 +179,40 @@ Modellare il comportamento di un distributore di bibite con un DFA. Il modello d
 
 @import "immagini/0124.png"- [Raccolta esercizi](#raccolta-esercizi)
 
-## 02-nfa
+## 02-03-nfa
 
-### Esercizio 0205E
+### Esercizio 02-0305E
 
 Insieme di tutte le stringhe che finiscono con 01.
 
 @import "immagini/0205E.png"- [Raccolta esercizi](#raccolta-esercizi)
 
-### Eercizio 0207
+### Esercizio 02-0307
 
 Riconosce le parole che terminano con 01 “scommettendo” se sta leggendo gli ultimi due simboli oppure no
 
 @import "immagini/0207.png"- [Raccolta esercizi](#raccolta-esercizi)
 
-### Esercizio 0212A
+### Esercizio 02-0312A
 
 L’insieme delle parole sull’alfabeto {0, 1, . . . , 9} tali che la cifra finale sia comparsa in precedenza.
 
 @import "immagini/0212A.png"- [Raccolta esercizi](#raccolta-esercizi)
 
-### Esercizio 0212B
+### Esercizio 02-0312B
 
 L’insieme delle parole sull’alfabeto {0, 1, . . . , 9} tali che la cifra finale non sia comparsa in precedenza.
 
 @import "immagini/0212B.png"- [Raccolta esercizi](#raccolta-esercizi)
 (Non vale per stringhe con solo 1 cifra ripetuta più di una volta)
 
-### Esercizio 0212C
+### Esercizio 02-0312C
 
 L’insieme delle parole di 0 e 1 tali che esistono due 0 separati da un numero di posizioni multiplo di 4 (0 è un multiplo di 4).
 
 @import "immagini/0212C.png"- [Raccolta esercizi](#raccolta-esercizi)
 
-### Esercizio 0213
+### Esercizio 02-0313
 
 Consideriamo l’alfabeto Σ = {a, b, c, d} e costruiamo un automa non deterministico che riconosce il linguaggio di tutte le parole tali che uno dei simboli dell’alfabeto non compare mai:
 
@@ -223,7 +223,7 @@ Consideriamo l’alfabeto Σ = {a, b, c, d} e costruiamo un automa non determini
 
 @import "immagini/0213.png"- [Raccolta esercizi](#raccolta-esercizi)
 
-### Esercizio 0223
+### Esercizio 02-0323
 
 Determinare il DFA equivalente all’NFA con la seguente tabella di transizione:
 
@@ -239,7 +239,7 @@ Qual è il linguaggio accettato dall’automa?
 
 Tutte le stringhe che appartengono all'alfabeto (0,1) e che contengono almeno due 1.
 
-### Esercizio 0224
+### Esercizio 02-0324
 
 Trasformare il seguente NFA in DFA.
 
@@ -247,7 +247,7 @@ Trasformare il seguente NFA in DFA.
 
 @import "immagini/0224.png"- [Raccolta esercizi](#raccolta-esercizi)
 
-### Esercizio 0225
+### Esercizio 02-0325
 
 Determinare il linguaggio riconosciuto dall’automa.
 Costruire un DFA equivalente.
@@ -258,9 +258,9 @@ Tutte le stringhe che terminano per 001 o 110.
 
 @import "immagini/0225.png"- [Raccolta esercizi](#raccolta-esercizi)
 
-## 03-epsilon
+## 04-epsilon
 
-### Esercizio 0302
+### Esercizio 0402
 
 Convertire il seguente NFA in DFA:
 
@@ -271,9 +271,9 @@ Convertire il seguente NFA in DFA:
 |C|{B}|{D}|
 |D|{$\emptyset$}|{$\emptyset$}|
 
-@import "immagini/0302.png"- [Raccolta esercizi](#raccolta-esercizi)
+@import "immagini/0402.png"- [Raccolta esercizi](#raccolta-esercizi)
 
-### Esercizio 0304
+### Esercizio 0404
 
 Costruiamo un NFA che accetta numeri decimali:
 
@@ -283,16 +283,16 @@ Costruiamo un NFA che accetta numeri decimali:
 * Un’altra stringa di cifre decimali
 * Una delle stringhe e può essere vuota, ma non entrambe
 
-@import "immagini/0304.png"- [Raccolta esercizi](#raccolta-esercizi)
+@import "immagini/0404.png"- [Raccolta esercizi](#raccolta-esercizi)
 
-### Esercizio 0318
+### Esercizio 0418
 
 1. Costruiamo un ε-NFA che riconosce le parole costituite da:
    * zero o più a
    * seguite da zero o più b
    * seguite da zero o più c
 
-   @import "immagini/0318.png"- [Raccolta esercizi](#raccolta-esercizi)
+   @import "immagini/0418.png"- [Raccolta esercizi](#raccolta-esercizi)
 
 2. Calcolare ECLOSE di ogni stato dell’automa
    * ECLOSE(q0) = {q0, q1, q2}
@@ -302,9 +302,9 @@ Costruiamo un NFA che accetta numeri decimali:
 
 Vedi esercizio E tutorato 01 [Link](#esercizio-tut01e)
 
-## 04-regexp
+## 05-regexp
 
-### Esercizio 0412
+### Esercizio 0512
 
 Scriviamo l’espressione regolare per L = {w ∈ {0, 1}$^*$ : 0 e 1 alternati in w}.
 
@@ -314,59 +314,57 @@ Oppure
 
 ($\varepsilon$ + 1)(01)$^*$($\varepsilon$ + 0)
 
-### Esercizio 0414A
+### Esercizio 0514A
 
 Costruire una ER sull’alfabeto {a, b, c} tale che tutte le stringhe w che contengono un numero pari di a;
 
 (b+c)$^*$ (a(b+c)$^*$a(b+c)$^*$)$^*$
 
-### Esercizio 0414B
+### Esercizio 0514B
 
 Costruire una ER sull’alfabeto {a, b, c} tale che tutte le stringhe w che contengono 4k + 1 occorrenze di b, per ogni k ≥ 0.
 
 (a+c)$^*$ (b(a+c)$^*$b(a+c)$^*$b(a+c)$^*$b(a+c)$^*$)$^*$
 
-### Esercizio 0414C
+### Esercizio 0514C
 
 Costruire una ER sull’alfabeto {a, b, c} tale che tutte le stringhe la cui lunghezza è un multiplo di 3.
 
 ((a+b+c)(a+b+c)(a+b+c))$^*$
 
-### Esercizio 0415A
+### Esercizio 0515A
 
 Costruire una ER sull’alfabeto {0, 1} tale che tutte le stringhe w che contengono la sottostringa 101.
 
 (0+1)$^*$101(0+1)$^*$
 
-### Esercizio 0415B
+### Esercizio 0515B
 
 Costruire una ER sull’alfabeto {0, 1} tale che tutte le stringhe w che non contengono la sottostringa 101.
 
 0$^*$(1+000$^*$)$^*$0$^*$
 
-### Esercizio 0415C
+### Esercizio 0515C
 
 Costruire una ER sull’alfabeto {0, 1} per il linguaggio di tutti i numeri binari multipli di 3.
 
 0$^*$((1(01$^*$0)$^*$1)$^*$0$^*$)$^*$
 
-Preso da [StackOverflow](https://stackoverflow.com/questions/7974655/regex-for-binary-multiple-of-3)
-
-### Esercizio 0420
+### Esercizio 0520
 
 Trasformare (0 + 1)$^*$1(0 + 1) in $\varepsilon$-NFA
 
-@import "immagini/0420.png"- [Raccolta esercizi](#raccolta-esercizi)
+@import "immagini/0520.png"- [Raccolta esercizi](#raccolta-esercizi)
 
-## 05-esercizi-er
+## 06-esercizi-er
 
-### Esercizio 0507A
+### Esercizio 0607A
 
 Trasformiamo (0+1)$^*$1(0+1) in $\varepsilon$-NFA
 
-@import "immagini/0507a.png"- [Raccolta esercizi](#raccolta-esercizi)
+@import "immagini/0607a.png"- [Raccolta esercizi](#raccolta-esercizi)
 
-### Esercizio 0507B
+### Esercizio 0607B
 
 Scrivere un’espressione regolare per rappresentare il linguaggio sull’alfabeto {a, b, c} che contiene tutte le stringhe che:
 * iniziano con a e sono composte solo di a oppure b
@@ -377,40 +375,40 @@ La prima condizione si potrebbe interpretare in 2 modi diversi.
 1. a(a+b)$^*$+c
 2. a(a*+b*)+c
 
-### Esercizio 0507C
+### Esercizio 0607C
 
 Trasformare l’espressione regolare dell’esercizio 2 in $\varepsilon$-NFA.
 
 Primo caso:
 
-@import "immagini/0507c1.png"- [Raccolta esercizi](#raccolta-esercizi)
+@import "immagini/0607c1.png"- [Raccolta esercizi](#raccolta-esercizi)
 
 
 Secondo caso:
 
-@import "immagini/0507c2.png"- [Raccolta esercizi](#raccolta-esercizi)
+@import "immagini/0607c2.png"- [Raccolta esercizi](#raccolta-esercizi)
 
-### Esercizio 0508A
+### Esercizio 0608A
 
 Scrivere una espressione regolare per tutte stringhe binarie che cominciano e finiscono per 1.
 
 1(0+1)$^*$1+1
 
-@import "immagini/0508a.png"- [Raccolta esercizi](#raccolta-esercizi)
+@import "immagini/0608a.png"- [Raccolta esercizi](#raccolta-esercizi)
 
-### Esercizio 0508B
+### Esercizio 0608B
 
 Scrivere una espressione regolare per le stringhe binarie che contengono almeno tre 1 consecutivi.
 
 (0+1)$^*$ 111 (0+1)$^*$
 
-### Esercizio 0508C
+### Esercizio 0608C
 
 Scrivere una espressione regolare per le stringhe binarie che contengono almeno tre 1 (anche non consecutivi).
 
 (0+1)$^*$ 1 (0+1)$^*$ 1 (0+1)$^*$ 1 (0+1)$^*$
 
-### Esercizio 0508D
+### Esercizio 0608D
 
 Scrivere una espressione regolare per stringhe di testo che descriva le date in formato GG/MM/AAAA.
 
@@ -418,34 +416,34 @@ Scrivere una espressione regolare per stringhe di testo che descriva le date in 
 
 Ovviamente non controlla gli anni bisestili e nemmeno che ci siano 30 o 31 giorni in un determinato mese.
 
-## 06-dfa2re
+## 07-dfa2re
 
-### Esercizio 0607A
+### Esercizio 0707A
 
 Costruiamo l’espressione regolare equivalente al seguente NFA:
 
-@import "immagini/0607AConsegna.png"- [Raccolta esercizi](#raccolta-esercizi)
+@import "immagini/0707AConsegna.png"- [Raccolta esercizi](#raccolta-esercizi)
 
 Eliminando gli stati $q_1$ e $q_2$:
-@import "immagini/0607A1.png"- [Raccolta esercizi](#raccolta-esercizi)
+@import "immagini/0707A1.png"- [Raccolta esercizi](#raccolta-esercizi)
 Eliminando gli stati $q_1$ e $q_3$:
-@import "immagini/0607A2.png"- [Raccolta esercizi](#raccolta-esercizi)
+@import "immagini/0707A2.png"- [Raccolta esercizi](#raccolta-esercizi)
 
 Sommando le 2 espressioni precedenti si ottiene la ER cercata:
 ((0+1)$^*$1(0+1)(0+1))+(0+1($^*$1(0+1))
-### Esercizio 0607B
+### Esercizio 0707B
 
 Costruiamo l’espressione regolare equivalente al seguente NFA:
 
-@import "immagini/0607BConsegna.png"- [Raccolta esercizi](#raccolta-esercizi)
+@import "immagini/0707BConsegna.png"- [Raccolta esercizi](#raccolta-esercizi)
 
-@import "immagini/0607B.png"- [Raccolta esercizi](#raccolta-esercizi)
+@import "immagini/0707B.png"- [Raccolta esercizi](#raccolta-esercizi)
 
-### Esercizio 0608
+### Esercizio 0708
 
 Costruiamo l’espressione regolare equivalente al seguente NFA:
 
-@import "immagini/0608Consegna.png"- [Raccolta esercizi](#raccolta-esercizi)
+@import "immagini/0708Consegna.png"- [Raccolta esercizi](#raccolta-esercizi)
 
 (1+0(10$^*$1+0)(1(10$^*$1+0))$^*$0)$^*$
 
