@@ -63,6 +63,14 @@ Il nome di ogni esercizio è dato dal numero della slide più il numero della pa
 	* [Esercizio 0811](#esercizio-0811)
 	* [Esercizio 0812](#esercizio-0812)
 	* [Esercizio 0813](#esercizio-0813)
+* [09-esercizi-pl](#09-esercizi-pl)
+	* [Esercizio 0904](#esercizio-0904)
+	* [Esercizio 0905](#esercizio-0905)
+	* [Esercizio 0906](#esercizio-0906)
+	* [Esercizio 0909A](#esercizio-0909a)
+	* [Esercizio 0909B](#esercizio-0909b)
+	* [Esercizio 0909C](#esercizio-0909c)
+* [10-chiusure](#10-chiusure)
 * [Credits](#credits)
 
 <!-- /code_chunk_output -->
@@ -496,6 +504,22 @@ Sì, $L_{nk}$ è regolare:
 * e riconosciuto dall'automa
 
 @import "immagini/0813.png"- [Raccolta esercizi](#raccolta-esercizi)
+
+## 09-esercizi-pl
+
+### Esercizio 0904
+
+### Esercizio 0905
+
+### Esercizio 0906
+
+### Esercizio 0909A
+
+### Esercizio 0909B
+
+### Esercizio 0909C
+
+## 10-chiusure
 
 ## Credits
 
