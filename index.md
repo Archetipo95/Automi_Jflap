@@ -83,21 +83,21 @@ Il nome di ogni esercizio è dato dal numero della slide più il numero della pa
 
 DFA che accetta tutte le stringhe che iniziano o finiscono con 01.
 
-@import "immagini/tut01a.png"- [Raccolta esercizi](#raccolta-esercizi)
+@import "immagini/tut01A.png"- [Raccolta esercizi](#raccolta-esercizi)
 
 ### Esercizio tut01B
 
 DFA che accetta tutte le stringhe che contengono almeno 2 zeri lunghe 5 caratteri.
 
-@import "immagini/tut01b.png"- [Raccolta esercizi](#raccolta-esercizi)
+@import "immagini/tut01B.png"- [Raccolta esercizi](#raccolta-esercizi)
 
 ### Esercizio tut01C
 
 Trasformare da NFA a DFA.
 
-@import "immagini/tut01cConsegna.png"- [Raccolta esercizi](#raccolta-esercizi)
+@import "immagini/tut01CConsegna.png"- [Raccolta esercizi](#raccolta-esercizi)
 
-@import "immagini/tut01c.png"- [Raccolta esercizi](#raccolta-esercizi)
+@import "immagini/tut01C.png"- [Raccolta esercizi](#raccolta-esercizi)
 
 ### Esercizio tut01D
 
@@ -107,7 +107,7 @@ Vedi esercizio 25 slide 02. [LINK](#esercizio-02-0325)
 
 Trasformare da $\varepsilon$-NFA a DFA.
 
-@import "immagini/tut01eConsegna.png"- [Raccolta esercizi](#raccolta-esercizi)
+@import "immagini/tut01EConsegna.png"- [Raccolta esercizi](#raccolta-esercizi)
 
 Chiusura = insieme di tutti gli stati in cui si può arrivare seguendo le $\varepsilon$-transizioni.
 
@@ -120,13 +120,13 @@ ENCLOSE ($q_0$)=$\{q_0,q_1,q_2\}$
 |*$\{q_2\}$|$\emptyset$|$\emptyset$|$\{q_2\}$
 |$\emptyset$|$\emptyset$|$\emptyset$|$\emptyset$
 
-@import "immagini/tut01e.png"- [Raccolta esercizi](#raccolta-esercizi)
+@import "immagini/tut01E.png"- [Raccolta esercizi](#raccolta-esercizi)
 
 ### Esercizio tut01F
 
 DFA che accetta multipli di 3 in binario.
 
-@import "immagini/tut01f.png"- [Raccolta esercizi](#raccolta-esercizi)
+@import "immagini/tut01F.png"- [Raccolta esercizi](#raccolta-esercizi)
 
 In questo caso bisogna prendere il binario e dividerlo per 3 e poi osservare i resti.
 Gli stati rappresentano:
@@ -380,7 +380,7 @@ Trasformare (0 + 1)$^*$1(0 + 1) in $\varepsilon$-NFA
 
 Trasformiamo (0+1)$^*$1(0+1) in $\varepsilon$-NFA
 
-@import "immagini/0607a.png"- [Raccolta esercizi](#raccolta-esercizi)
+@import "immagini/0607A.png"- [Raccolta esercizi](#raccolta-esercizi)
 
 ### Esercizio 0607B
 
@@ -399,12 +399,12 @@ Trasformare l’espressione regolare dell’esercizio 2 in $\varepsilon$-NFA.
 
 Primo caso:
 
-@import "immagini/0607c1.png"- [Raccolta esercizi](#raccolta-esercizi)
+@import "immagini/0607C1.png"- [Raccolta esercizi](#raccolta-esercizi)
 
 
 Secondo caso:
 
-@import "immagini/0607c2.png"- [Raccolta esercizi](#raccolta-esercizi)
+@import "immagini/0607C2.png"- [Raccolta esercizi](#raccolta-esercizi)
 
 ### Esercizio 0608A
 
@@ -412,7 +412,7 @@ Scrivere una espressione regolare per tutte stringhe binarie che cominciano e fi
 
 1(0+1)$^*$1+1
 
-@import "immagini/0608a.png"- [Raccolta esercizi](#raccolta-esercizi)
+@import "immagini/0608A.png"- [Raccolta esercizi](#raccolta-esercizi)
 
 ### Esercizio 0608B
 
