@@ -17,6 +17,7 @@ Il nome di ogni esercizio è dato dal numero della slide più il numero della pa
 	* [Esercizio tut01E](#esercizio-tut01e)
 	* [Esercizio tut01F](#esercizio-tut01f)
 	* [Esercizio tut01G](#esercizio-tut01g)
+* [Tutorato 02](#tutorato-02)
 * [01-intro-dfa](#01-intro-dfa)
 	* [Esercizio 0122](#esercizio-0122)
 	* [Esercizio 0123A](#esercizio-0123a)
@@ -67,6 +68,7 @@ Il nome di ogni esercizio è dato dal numero della slide più il numero della pa
 	* [Esercizio 0904](#esercizio-0904)
 	* [Esercizio 0905](#esercizio-0905)
 	* [Esercizio 0906](#esercizio-0906)
+	* [Esercizio 0906](#esercizio-0906-1)
 	* [Esercizio 0909A](#esercizio-0909a)
 	* [Esercizio 0909B](#esercizio-0909b)
 	* [Esercizio 0909C](#esercizio-0909c)
@@ -147,6 +149,10 @@ a\*ba\*ba\*(ba\*+$\varepsilon$)
 
 * lunghezza stringa multiplo di 3 con  $\Sigma$={a,b,c}\*
 ((a+b+c)(a+b+c)(a+b+c))\*
+
+## Tutorato 02
+
+// TODO
 
 ## 01-intro-dfa
 
@@ -476,11 +482,11 @@ No, $L_{ab}$ non è regolare:
 \underbrace{...aa}_{y}
 \underbrace{abbbbb}_{z}$
 
-* per il Pumping lemma, anche $xy^2z$ ∈ Lab, ma contiene più a che b ⇒ **assurdo**.
+* per il Pumping Lemma, anche $xy^2z$ ∈ $L_{ab}$, ma contiene più a che b ⇒ **assurdo**.
 
 ### Esercizio 0812
 
-Il linguaggio $L_{rev}$ = {$ww_R$ : w ∈ {a, b}$^*$} è regolare?
+Il linguaggio $L_{rev}$ = {$ww^R$ : w ∈ {a, b}$^*$} è regolare?
 
 No, $L_{rev}$ non è regolare:
 * supponiamo per assurdo che lo sia
@@ -493,7 +499,7 @@ No, $L_{rev}$ non è regolare:
 \underbrace{...aa}_{y}
 \underbrace{abbaaa..aa}_{z}$
 
-* per il Pumping lemma, anche $xy^0z = xz ∈ L_{rev}$, ma non la posso spezzare in $ww^R$ ⇒ **assurdo**.
+* per il Pumping Lemma, anche $xy^0z = xz ∈ L_{rev}$, ma non la posso spezzare in $ww^R$ ⇒ **assurdo**.
 
 ### Esercizio 0813
 
@@ -509,17 +515,102 @@ Sì, $L_{nk}$ è regolare:
 
 ### Esercizio 0904
 
+Sia $L_{ab}$ il linguaggio delle stringhe sull’alfabeto {a, b} dove il numero di a è uguale al numero di b. $L_{ab}$ è regolare?
+
+No, $L_{ab}$ non è regolare:
+* supponiamo per assurdo che lo sia
+* sia $h$ la lunghezza data dal Pumping Lemma
+* consideriamo la parola $w = a^hb^h$
+* prendiamo un qualsiasi split $w = xyz$ tale che $y \ne \varepsilon$ e $\mid xy \mid ≤ h$:
+
+   $w =
+\underbrace{aa...aa}_{x}
+\underbrace{a...a}_{y}
+\underbrace{a...abb...bbb}_{z}$
+
+* poiché $\mid xy \mid ≤ h$, le stringhe x e y sono fatte di sole `a`
+* per il Pumping Lemma, anche $xy^2z$ ∈ $L_{ab}$, ma contiene più a che b ⇒ **assurdo**.
+
 ### Esercizio 0905
+
+Vedi esercizio 12 slide 08. [LINK](#esercizio-0812)
 
 ### Esercizio 0906
 
+Vedi esercizio 13 slide 08. [LINK](#esercizio-0813)
+
+### Esercizio 0906
+
+Il linguaggio $L_p$ = {$1^p$ : p è primo} è regolare?
+
+No, $L_p$ non è regolare:
+* supponiamo per assurdo che lo sia
+* sia $h$ la lunghezza data dal Pumping Lemma
+* consideriamo la parola $w = 1^p$ con $p$ primo e $p > h+2$
+* prendiamo un qualsiasi split $w = xyz$ tale che $y \ne \varepsilon$ e $\mid xy \mid ≤ h$:
+
+   $w =
+\underbrace{11...11}_{x}
+\underbrace{11...11}_{y}
+\underbrace{11...11}_{z}$
+
+* sia $\mid y \mid = m$ allora $\mid xy \mid = p - m$
+* per il Pumping Lemma, anche $v=xy^{p-m}z$ ∈ $L_p$
+* allora $\mid v \mid = m(p-m)+p-m=(p-m)(m+1)$ sì può scomporre in due fattori
+* poiché $y \ne \varepsilon$, allora $|y| = m > 0$ e $m + 1 > 1$
+* anche $ p - m > 1$ perché abbiamo scelto $p > h + 2$ e $m ≤ h$ perché $|xy| ≤ h$
+* i due fattori sono entrambi maggiori di 1 e quindi $\mid v \mid$ non è un numero primo
+* $v \not \in L_p$, **assurdo**.
+
 ### Esercizio 0909A
+
+Il linguaggio $L_{3n+2}$ = {$1^{3n+2} : n ≥ 0$} è regolare?
+
+Sì, $L_{3n+2}$ è regolare:
+* è rappresentato dall’espressione regolare (111)$^*$11
+* e riconosciuto dall'automa
+
+@import "immagini/0909A.png"- [Raccolta esercizi](#raccolta-esercizi)
 
 ### Esercizio 0909B
 
+Il linguaggio $L_{mn}$ = {$0^n1^m0^n : m + n > 0$} è regolare?
+
+No, $L_{mn}$ non è regolare:
+* supponiamo per assurdo che lo sia
+* sia $h$ la lunghezza data dal Pumping Lemma
+* consideriamo la parola $w = 0^n1^m0^n$
+* prendiamo un qualsiasi split $w = xyz$ tale che $y \ne \varepsilon$ e $\mid xy \mid ≤ h$:
+
+   $w =
+\underbrace{00...00}_{x}
+\underbrace{0...0}_{y}
+\underbrace{00..0011..1100..00}_{z}$
+
+* poiché $\mid xy \mid ≤ h$, le stringhe x e y sono fatte di soli `0`
+* per il Pumping Lemma, anche $xy^2z$ ∈ $L_{mn}$, ma il numero di `0` a sinistra e destra degli `1` non è uguale  ⇒ **assurdo**.
+
 ### Esercizio 0909C
 
+Il linguaggio $L_{2a}$ = { w ∈ {a, b}$^*$: il numero di a è due volte il numero di b} è regolare?
+
+No, $L_{2a}$ non è regolare:
+* supponiamo per assurdo che lo sia
+* sia $h$ la lunghezza data dal Pumping Lemma
+* consideriamo la parola $w = a^{2n}b^n$
+* prendiamo un qualsiasi split $w = xyz$ tale che $y \ne \varepsilon$ e $\mid xy \mid ≤ h$:
+
+   $w =
+\underbrace{aa...aa}_{x}
+\underbrace{a...a}_{y}
+\underbrace{a...abb...bbb}_{z}$
+
+* poiché $\mid xy \mid ≤ h$, le stringhe x e y sono fatte di sole `a`
+* per il Pumping Lemma, anche $xy^2z$ ∈ $L_{2a}$, ma il numero di `a` è più del doppio del numero delle `b` ⇒ **assurdo**.
+
 ## 10-chiusure
+
+//TODO
 
 ## Credits
 
