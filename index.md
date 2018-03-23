@@ -18,6 +18,7 @@ Il nome di ogni esercizio è dato dal numero della slide più il numero della pa
 	* [Esercizio tut01F](#esercizio-tut01f)
 	* [Esercizio tut01G](#esercizio-tut01g)
 * [Tutorato 02](#tutorato-02)
+	* [Esercizio 4.1.2C](#esercizio-412c)
 * [01-intro-dfa](#01-intro-dfa)
 	* [Esercizio 0122](#esercizio-0122)
 	* [Esercizio 0123A](#esercizio-0123a)
@@ -152,7 +153,9 @@ a\*ba\*ba\*(ba\*+$\varepsilon$)
 
 ## Tutorato 02
 
-// TODO
+### Esercizio 4.1.2C
+
+L = {0$^p$: con p potenza di 2} è regolare?
 
 ## 01-intro-dfa
 
@@ -426,11 +429,15 @@ Scrivere una espressione regolare per le stringhe binarie che contengono almeno 
 
 (0+1)$^*$ 1 (0+1)$^*$ 1 (0+1)$^*$ 1 (0+1)$^*$
 
+oppure
+
+(0+1)$^*$ 1 0$^*$ 1 0$^*$ 1 (0+1)$^*$
+
 ### Esercizio 0608D
 
 Scrivere una espressione regolare per stringhe di testo che descriva le date in formato GG/MM/AAAA.
 
-(0+...+31)/(1+...+12)/(0+...+9)(0+...+9)(0+...+9)(0+...+9)
+0(1+...+9)+(1+2)(0+..+9)+3(0+1)/0(1+...+9)+1(0+...+2)/(0+...+9)$^4$
 
 Ovviamente non controlla gli anni bisestili e nemmeno che ci siano 30 o 31 giorni in un determinato mese.
 
