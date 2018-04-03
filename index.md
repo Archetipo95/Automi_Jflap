@@ -19,6 +19,7 @@ Il nome di ogni esercizio è dato dal numero della slide più il numero della pa
 	* [Esercizio tut01G](#esercizio-tut01g)
 * [Tutorato 02](#tutorato-02)
 	* [Esercizio 4.1.2C](#esercizio-412c)
+* [Tutorato 03](#tutorato-03)
 * [01-intro-dfa](#01-intro-dfa)
 	* [Esercizio 0122](#esercizio-0122)
 	* [Esercizio 0123A](#esercizio-0123a)
@@ -74,11 +75,19 @@ Il nome di ogni esercizio è dato dal numero della slide più il numero della pa
 	* [Esercizio 0909B](#esercizio-0909b)
 	* [Esercizio 0909C](#esercizio-0909c)
 * [10-chiusure](#10-chiusure)
+* [11-fm-esercizi](#11-fm-esercizi)
+	* [Esercizio 1112](#esercizio-1112)
+	* [Esercizio 1113A](#esercizio-1113a)
+	* [Esercizio 1113B](#esercizio-1113b)
+	* [Esercizio 1114A](#esercizio-1114a)
+	* [Esercizio 1114B](#esercizio-1114b)
 * [Credits](#credits)
 
 <!-- /code_chunk_output -->
 
 ## Tutorato 01
+
+Link repository ALIENK9 $\rightarrow$ [esercizi completi](https://github.com/ALIENK9/AutomiTutorato2018/blob/master/Tutorato1_180312.md)
 
 ### Esercizio tut01A
 
@@ -153,9 +162,16 @@ a\*ba\*ba\*(ba\*+$\varepsilon$)
 
 ## Tutorato 02
 
+Link repository ALIENK9 $\rightarrow$ [esercizi completi](https://github.com/ALIENK9/AutomiTutorato2018/blob/master/Tutorato2_180321.md)
+
 ### Esercizio 4.1.2C
 
 L = {0$^p$: con p potenza di 2} è regolare?
+
+## Tutorato 03
+
+Link repository ALIENK9 $\rightarrow$ [esercizi completi](https://github.com/ALIENK9/AutomiTutorato2018/blob/master/Tutorato3_180326.md
+)
 
 ## 01-intro-dfa
 
@@ -618,6 +634,52 @@ No, $L_{2a}$ non è regolare:
 ## 10-chiusure
 
 //TODO
+
+## 11-fm-esercizi
+
+### Esercizio 1112
+
+Costruire l’automa che riconosce l’intersezione dei linguaggi dei seguenti due automi:
+
+@import "immagini/1112ConsegnaA.png"- [Raccolta esercizi](#raccolta-esercizi)
+@import "immagini/1112ConsegnaB.png"- [Raccolta esercizi](#raccolta-esercizi)
+
+Soluzione senza stati finali ($q_0p_3$) o ($q_1p_3$)
+
+@import "immagini/1112.png"- [Raccolta esercizi](#raccolta-esercizi)
+
+### Esercizio 1113A
+
+Costruire un DFA sull’alfabeto {0, 1} che rappresenti tutte le stringhe w che contengono la sottostringa 101.
+
+@import "immagini/1113A.png"- [Raccolta esercizi](#raccolta-esercizi)
+
+### Esercizio 1113B
+
+Costruire un DFA sull’alfabeto {0, 1} che rappresenti tutte le stringhe w che non contengono la sottostringa 101.
+
+@import "immagini/1113B.png"- [Raccolta esercizi](#raccolta-esercizi)
+
+### Esercizio 1114A
+
+Sia L un linguaggio sull’alfabeto Σ e a ∈ Σ. Definiamo il quoziente di L e a come il linguaggio:
+L/a = {w ∈ Σ$^*$ : wa ∈ L}
+Dimostrare che se L è regolare allora anche L/a è regolare.
+
+//todo
+
+### Esercizio 1114B
+
+Sia L un linguaggio regolare. Dimostrare che anche i seguenti linguaggi sono regolari:
+* min(L) = {w : w ∈ L ma nessun prefisso proprio di w è in L}
+* max(L) = {w : w ∈ L e per nessuna stringa x $\ne$ ε, wx ∈ L}
+
+Min sono le parole più corte che appartengono ad L
+Max sono le parole più lunghe che appartengono ad L
+Prefesso proprio di w: segmento iniziale di w
+w=a$_1$......a$_n$ prefisso proprio di w sono tutte le parole a$_1$...a$_k$ con k < n
+
+//todo
 
 ## Credits
 
