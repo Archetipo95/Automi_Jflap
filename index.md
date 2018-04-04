@@ -361,7 +361,7 @@ Costruire una ER sull’alfabeto {a, b, c} tale che tutte le stringhe w che cont
 
 Costruire una ER sull’alfabeto {a, b, c} tale che tutte le stringhe w che contengono 4k + 1 occorrenze di b, per ogni k ≥ 0.
 
-(a+c)$^*$ (b(a+c)$^*$b(a+c)$^*$b(a+c)$^*$b(a+c)$^*$)$^*$
+(a+c)$^*$b(b(a+c)$^*$b(a+c)$^*$b(a+c)$^*$b(a+c)$^*$)$^*$
 
 ### Esercizio 0514C
 
