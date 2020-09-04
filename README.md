@@ -5,4 +5,4 @@
 Raccolta degli esercizi assegnati durante le lezioni di Automi e Linguaggi Formali 2017/2018.
 I file jflap sono stati creati con la versione 8 beta.
 
-archetipo95.github.io/automi_jflap/
+https://www.archetipo95.github.io/automi_jflap/
